@@ -3,7 +3,7 @@
 [![Firefox Extension](https://img.shields.io/badge/Firefox-Obtener_Extensi%C3%B3n-orange.svg?logo=firefox-browser)](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/)
 [![Android APK](https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/latest)
 
-**VIORENCIA | PASS SAFE** es un gestor de contraseñas y códigos de doble factor (2FA) moderno, diseñado bajo una arquitectura **Zero-Knowledge** (conocimiento cero). Toda la lógica criptográfica pesada se ejecuta localmente en tu dispositivo mediante **Rust compilado a WebAssembly (WASM)**, garantizando que tus claves maestras y secretos nunca viajen ni se expongan en la red en texto plano.
+**VIORENCIA | PASS SAFE** es un gestor de contraseñas y códigos de doble factor (2FA) moderno, diseñado bajo una arquitectura **Zero-Knowledge** (conocimiento cero). Toda la lógica criptográfica pesada se ejecuta localmente en tu dispositivo mediante **Rust compilado a WebAssembly (WASM)** (en la web y extensión de navegador) y a través de **Kotlin nativo con criptografía de alta seguridad** (en la aplicación Android), garantizando que tus claves maestras y secretos nunca viajen ni se expongan en la red en texto plano.
 
 ---
 
@@ -13,7 +13,7 @@
 | :--- | :---: | :--- |
 | **Portal Web** | Disponible | [Acceder a la Web](https://viorencia.com/vpass/) |
 | **Extensión Firefox** | Publicado | [Descargar de Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/) |
-| **Aplicación Android** | APK Estable | [Descargar `.apk` directo](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/latest) |
+| **Aplicación Android** | APK (v1.1.0) | [Descargar vpass-1.1.0.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.0/vpass-1.1.0.apk) |
 | **Extensión Chrome** | En revisión | *Próximamente* |
 
 ---
@@ -50,20 +50,23 @@ sequenceDiagram
 ## ✨ Características Principales
 
 * 🔑 **Autoguardado Inteligente:** Captura y guarda contraseñas al registrarte o iniciar sesión en webs de terceros mediante la extensión de navegador.
-* 🕒 **Sincronización en Tiempo Real:** Los cambios realizados en el portal web se reflejan instantáneamente en tu extensión de navegador y dispositivo móvil mediante WebSockets de Supabase en caliente.
-* 🚨 **Auditoría de Seguridad Local:** Auditoría permanente contra bases de datos de brechas de seguridad (**Have I Been Pwned**). Se calcula el hash SHA-1 de tus contraseñas localmente y se consulta de forma anónima mediante **k-Anonymity** (enviando solo los primeros 5 caracteres del hash) para avisarte si tus contraseñas han sido expuestas públicamente.
-* ⏳ **Bypass 2FA de Confianza:** Si activas el Doble Factor, el sistema recordará de forma segura la combinación de tu navegador (`device_id`) e IP de confianza para no exigirte el código TOTP en cada inicio de sesión.
-* 📥 **Importación y Exportación:** Soporte para importar y exportar tus credenciales en JSON (plano o cifrado localmente) y formato CSV compatible con otros gestores (Bitwarden, 1Password, etc.).
+* 🕒 **Sincronización en Tiempo Real:** Sincronización instantánea mediante WebSockets de Supabase. Los cambios en el portal web se reflejan de inmediato en tu extensión y dispositivo móvil.
+* 📱 **Autocompletado Nativo en Android:** Integración con el sistema operativo Android como un `AutofillService` para autocompletar credenciales en cualquier app o navegador de forma automática.
+* 🔓 **Acceso Biométrico Seguro:** Desbloqueo rápido y seguro mediante huella dactilar o reconocimiento facial de Android (`BiometricPrompt`), protegiendo las llaves en el hardware seguro del terminal.
+* 💾 **Persistencia Cifrada Local (Móvil):** Almacenamiento local en el dispositivo Android mediante base de datos **Room + SQLCipher**, cifrando el cofre completo a nivel de disco físico.
+* 🚨 **Auditoría de Seguridad Local:** Auditoría de compromiso permanente (**Have I Been Pwned**). Calcula el hash SHA-1 de tus contraseñas en local y consulta de forma anónima con **k-Anonymity** (enviando solo los primeros 5 caracteres del hash).
+* ⏳ **Bypass 2FA de Confianza:** El sistema recuerda la combinación de tu navegador e IP de confianza para evitar solicitar el TOTP en cada inicio de sesión si el dispositivo es seguro.
+* 📥 **Importación y Exportación:** Soporte para importar y exportar en JSON (plano o cifrado localmente) y formato CSV estándar (compatible con Bitwarden, 1Password, etc.).
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Criptografía y Core:** Rust, WebAssembly (`wasm-bindgen`).
+* **Criptografía y Core (Web/Extensión):** Rust, WebAssembly (`wasm-bindgen`).
 * **Frontend Web:** Vanilla HTML5, CSS Premium, JavaScript (Vite).
 * **Backend y Base de Datos:** Supabase (Auth, PostgreSQL, Realtime WebSockets).
 * **Extensión de Navegador:** Manifest V3 (WebExtensions API).
-* **App Móvil:** Android Nativo / APK.
+* **App Móvil (Android):** Kotlin nativo, **Jetpack Compose (Material 3)**, Ktor Client (CIO), **Room Database**, **SQLCipher** (cifrado local de base de datos), **AndroidX Biometric**, **AndroidX Security Crypto** y **BouncyCastle**.
 
 ---
 
