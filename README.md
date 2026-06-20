@@ -1,4 +1,4 @@
-# <img src="viorencia.svg" align="left" width="48" height="48" style="margin-right: 10px;"> VIORENCIA | PASS SAFE
+# <img src="viorencia.svg" align="left" height="48" style="margin-right: 10px;"> VIORENCIA | PASS SAFE
 
 [![Firefox Extension](https://img.shields.io/badge/Firefox-Obtener_Extensi%C3%B3n-orange.svg?logo=firefox-browser)](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/)
 [![Android APK](https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/latest)
@@ -70,4 +70,8 @@ sequenceDiagram
 
 ---
 
-*Desarrollado con ❤️ por [Manuel Lara López](https://viorencia.com).*
+<p align="center" style="user-select: none; -webkit-user-select: none;">
+  <span style="font-weight: bold; font-family: sans-serif;">v.pass</span> © 2026
+  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #d03c3c; vertical-align: middle; margin: 0 2px;"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 6 10 10l4 2-2 4"/></svg>
+  <span>Manu Lara</span>
+</p>
