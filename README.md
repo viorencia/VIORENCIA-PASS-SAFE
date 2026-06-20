@@ -13,7 +13,7 @@
 | :--- | :---: | :--- |
 | **Portal Web** | Disponible | [Acceder a la Web](https://viorencia.com/vpass/) |
 | **Extensión Firefox** | Publicado | [Descargar de Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/) |
-| **Aplicación Android** | APK (v1.1.0) | [Descargar vpass-1.1.0.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.0/vpass-1.1.0.apk) |
+| **Aplicación Android** | APK (v1.1.0) | [Descargar vpass-1.1.0.apk](vpass-1.1.0.apk) |
 | **Extensión Chrome** | En revisión | *Próximamente* |
 
 ---
