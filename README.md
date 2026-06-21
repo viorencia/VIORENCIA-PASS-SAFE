@@ -4,7 +4,7 @@
 
 <p>
   <a href="https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/"><img src="https://img.shields.io/badge/Firefox-Obtener_Extensi%C3%B3n-orange.svg?logo=firefox-browser" alt="Firefox Extension"></a>
-  <a href="https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.0/vpass-1.1.0.apk"><img src="https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android" alt="Android APK"></a>
+  <a href="https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.2/vpass-1.1.2.apk"><img src="https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android" alt="Android APK"></a>
 </p>
 
 **VIORENCIA | PASS SAFE** es un gestor de contraseñas y códigos de doble factor (2FA) moderno, diseñado bajo una arquitectura **Zero-Knowledge** (conocimiento cero). Toda la lógica criptográfica pesada se ejecuta localmente en tu dispositivo mediante **Rust compilado a WebAssembly (WASM)** (en la web y extensión de navegador) y a través de **Kotlin nativo con criptografía de alta seguridad** (en la aplicación Android), garantizando que tus claves maestras y secretos nunca viajen ni se expongan en la red en texto plano.
@@ -20,21 +20,21 @@
 | :--- | :---: | :--- |
 | **Portal Web** | Disponible | [Acceder a la Web](https://viorencia.com/vpass/) |
 | **Extensión Firefox** | Publicado | [Descargar de Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/) |
-| **Aplicación Android** | APK (v1.1.0) | [Descargar vpass-1.1.0.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.0/vpass-1.1.0.apk) |
+| **Aplicación Android** | APK (v1.1.2) | [Descargar vpass-1.1.2.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.2/vpass-1.1.2.apk) |
 
 <img src="line.svg" width="100%" height="2">
 
-### 📱 Instalación en Android (v1.1.0)
+### 📱 Instalación en Android (v1.1.2)
 <img src="subline.svg" width="100%" height="1">
 
 Para instalar la aplicación en tu dispositivo Android de forma directa:
 
-1. **Descarga el archivo APK**: Haz clic en el botón de descarga superior o directamente en este enlace: [Descargar APK (v1.1.0)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.0/vpass-1.1.0.apk).
+1. **Descarga el archivo APK**: Haz clic en el botón de descarga superior o directamente en este enlace: [Descargar APK (v1.1.2)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.2/vpass-1.1.2.apk).
 2. **Permitir orígenes desconocidos**: Al ser una aplicación externa a Google Play, tu dispositivo te pedirá confirmación. Activa la opción **"Permitir desde esta fuente"** u **"Orígenes desconocidos"** en los ajustes de tu navegador o del gestor de archivos cuando se te solicite.
 3. **Instalar y Ejecutar**: Abre el archivo descargado y presiona **Instalar**. ¡Listo!
 
 > [!TIP]
-> Recuerda que la aplicación móvil soporta **BiometricPrompt** (desbloqueo rápido mediante huella digital o facial) y se integra como un **AutofillService** de Android para autocompletar tus contraseñas en cualquier app.
+> Recuerda que la aplicación móvil soporta **BiometricPrompt** (desbloqueo rápido mediante huella digital) y se integra como un **AutofillService** de Android para autocompletar tus contraseñas en cualquier app.
 
 <img src="line.svg" width="100%" height="2">
 
@@ -74,7 +74,7 @@ sequenceDiagram
 * 🔑 **Autoguardado Inteligente:** Captura y guarda contraseñas al registrarte o iniciar sesión en webs de terceros mediante la extensión de navegador.
 * 🕒 **Sincronización en Tiempo Real:** Sincronización instantánea mediante WebSockets de Supabase. Los cambios en el portal web se reflejan de inmediato en tu extensión y dispositivo móvil.
 * 📱 **Autocompletado Nativo en Android:** Integración con el sistema operativo Android como un `AutofillService` para autocompletar credenciales en cualquier app o navegador de forma automática.
-* 🔓 **Acceso Biométrico Seguro:** Desbloqueo rápido y seguro mediante huella dactilar o reconocimiento facial de Android (`BiometricPrompt`), protegiendo las llaves en el hardware seguro del terminal.
+* 🔓 **Acceso Biométrico Seguro:** Desbloqueo rápido y seguro mediante huella dactilar de Android (`BiometricPrompt`), protegiendo las llaves en el hardware seguro del terminal.
 * 💾 **Persistencia Cifrada Local (Móvil):** Almacenamiento local en el dispositivo Android mediante base de datos **Room + SQLCipher**, cifrando el cofre completo a nivel de disco físico.
 * 🚨 **Auditoría de Seguridad Local:** Auditoría de compromiso permanente (**Have I Been Pwned**). Calcula el hash SHA-1 de tus contraseñas en local y consulta de forma anónima con **k-Anonymity** (enviando solo los primeros 5 caracteres del hash).
 * ⏳ **Bypass 2FA de Confianza:** El sistema recuerda la combinación de tu navegador e IP de confianza para evitar solicitar el TOTP en cada inicio de sesión si el dispositivo es seguro.
