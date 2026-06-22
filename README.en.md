@@ -31,7 +31,7 @@ English | [Español](README.md)
 
 To install the application directly on your Android device:
 
-1. **Download the APK file**: Click the download button above or directly on this link: [Download APK (v1.1.3)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.3/vpass-1.1.3.apk).
+1. **Download the APK file**: Click the download button above or directly on this link: [Download APK (v1.1.4)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk).
 2. **Allow unknown sources**: As this is an external app outside Google Play, your device will ask for confirmation. Enable the **"Allow from this source"** or **"Unknown sources"** option in your browser or file manager settings when prompted.
 3. **Install and Run**: Open the downloaded file and press **Install**. Ready!
 
