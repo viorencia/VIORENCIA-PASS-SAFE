@@ -6,7 +6,7 @@
 
 <p>
   <a href="https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/"><img src="https://img.shields.io/badge/Firefox-Obtener_Extensi%C3%B3n-orange.svg?logo=firefox-browser" alt="Firefox Extension"></a>
-  <a href="https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.3/vpass-1.1.3.apk"><img src="https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android" alt="Android APK"></a>
+  <a href="https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk"><img src="https://img.shields.io/badge/Android-Descargar_APK-green.svg?logo=android" alt="Android APK"></a>
 </p>
 
 **VIORENCIA | PASS SAFE** es un gestor de contraseñas y códigos de doble factor (2FA) moderno, diseñado bajo una arquitectura **Zero-Knowledge** (conocimiento cero). Toda la lógica criptográfica pesada se ejecuta localmente en tu dispositivo mediante **Rust compilado a WebAssembly (WASM)** (en la web y extensión de navegador) y a través de **Kotlin nativo con criptografía de alta seguridad** (en la aplicación Android), garantizando que tus claves maestras y secretos nunca viajen ni se expongan en la red en texto plano.
@@ -22,7 +22,7 @@
 | :--- | :---: | :--- |
 | **Portal Web** | Disponible | [Acceder a la Web](https://viorencia.com/vpass/) |
 | **Extensión Firefox** | Publicado | [Descargar de Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/) |
-| **Aplicación Android** | APK (v1.1.4) | [Descargar vpass-1.1.3.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk) |
+| **Aplicación Android** | APK (v1.1.4) | [Descargar vpass-1.1.4.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk) |
 
 <img src="line.svg" width="100%" height="2">
 
