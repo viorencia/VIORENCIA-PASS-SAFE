@@ -22,16 +22,16 @@
 | :--- | :---: | :--- |
 | **Portal Web** | Disponible | [Acceder a la Web](https://viorencia.com/vpass/) |
 | **Extensión Firefox** | Publicado | [Descargar de Mozilla Add-ons](https://addons.mozilla.org/es/firefox/addon/viorencia-pass-safe/) |
-| **Aplicación Android** | APK (v1.1.3) | [Descargar vpass-1.1.3.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.3/vpass-1.1.3.apk) |
+| **Aplicación Android** | APK (v1.1.4) | [Descargar vpass-1.1.3.apk](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk) |
 
 <img src="line.svg" width="100%" height="2">
 
-### 📱 Instalación en Android (v1.1.3)
+### 📱 Instalación en Android (v1.1.4)
 <img src="subline.svg" width="100%" height="1">
 
 Para instalar la aplicación en tu dispositivo Android de forma directa:
 
-1. **Descarga el archivo APK**: Haz clic en el botón de descarga superior o directamente en este enlace: [Descargar APK (v1.1.3)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.3/vpass-1.1.3.apk).
+1. **Descarga el archivo APK**: Haz clic en el botón de descarga superior o directamente en este enlace: [Descargar APK (v1.1.4)](https://github.com/viorencia/VIORENCIA-PASS-SAFE/releases/download/v1.1.4/vpass-1.1.4.apk).
 2. **Permitir orígenes desconocidos**: Al ser una aplicación externa a Google Play, tu dispositivo te pedirá confirmación. Activa la opción **"Permitir desde esta fuente"** u **"Orígenes desconocidos"** en los ajustes de tu navegador o del gestor de archivos cuando se te solicite.
 3. **Instalar y Ejecutar**: Abre el archivo descargado y presiona **Instalar**. ¡Listo!
 
